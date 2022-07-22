@@ -1,0 +1,35 @@
+.tweet-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+    'avatar user'
+    'avatar text'
+    ;
+    gap: 4px 16px;
+    align-items: center;
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    grid-area: avatar;
+}
+
+.user {
+    grid-area: user;
+}
+
+.user-name {
+    font-weight: bold;
+    color: var(--primary-text);
+}
+
+.user-username, .date {
+    font-weight: bold;
+    color: var(--secondary-text);
+}
+
+.tweet-text {
+    color: var(--primary-text);
+    grid-area: text;
+}
